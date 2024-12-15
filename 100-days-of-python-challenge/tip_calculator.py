@@ -1,8 +1,0 @@
-print("Tip Caclulator")
-bill = float(input("What is the total bill? $"))
-tip = float(input("What percentage would you like to give as a tip? "))
-percent = (tip / 100)
-total = (percent * bill)
-friends = float(input("How many people are you splitting the bill with? Including yourself. "))
-final = (total / friends)
-print("Individual share of the tip is $"+str(round(final, 2)))
