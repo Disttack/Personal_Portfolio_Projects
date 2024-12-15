@@ -6,19 +6,23 @@ extra_cheese = input("Do you want extra cheese? Y or N: ")
 #Figuure out the amount they need to pay based on choices
 #S = 15 / M = 20 / L = 25 / Spepperoni = +2 / M+Lpepperoni = +3 / Any extra cheese = +1
 
+Bill = 0
+
 if size == "S":
-    Bill = 15
-if size == "M":
-    Bill = 20
-if size == "L":
-    Bill = 25
+    Bill += 15
+elif size == "M":
+    Bill += 20
+elif size == "L":
+    Bill += 25
+else:
+    print("Please specify L, M, or S.")
+
 if pepperoni == "Y":
     if size == "S":
         Bill += 2
-    if size == "M":
+    else:
         Bill += 3
-    if size == "L":
-        Bill += 3
+
 if extra_cheese == "Y":
     Bill += 1
 
